@@ -1,7 +1,7 @@
 {
   "name": "@sunnypai/koishi-plugin-milvus",
   "description": "向量数据库 milvus 服务",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
   "files": [
@@ -28,7 +28,8 @@
   "keywords": [
     "chatbot",
     "koishi",
-    "plugin"
+    "plugin",
+    "database"
   ],
   "peerDependencies": {
     "koishi": "^4.15.6"
@@ -38,7 +39,8 @@
   },
   "koishi": {
     "description": {
-      "zh": "向量数据库 milvus 服务"
+      "zh": "向量数据库 milvus 服务",
+      "en": "Milvus vector database service"
     },
     "service": {
       "implements": [

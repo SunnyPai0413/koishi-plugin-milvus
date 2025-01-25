@@ -33,7 +33,7 @@ namespace MilvusService {
     password?: string;
   };
   export const Config: Schema<Config> = Schema.object({
-    host: Schema.string().default('localhost').required().description("IP地址/域名"),
+    host: Schema.string().required().description("IP地址/域名"),
     port: Schema.number().min(1).max(65535).default(19530).required().description("端口"),
     username: Schema.string().description("用户名"),
     password: Schema.string().role('secret').description("密码"),
